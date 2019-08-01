@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class dayScript : MonoBehaviour
 {
-    public Vector3 speed;
+    public float speed = 0;
     void Start()
     {
        
@@ -13,6 +13,6 @@ public class dayScript : MonoBehaviour
     
     void Update()
     {
-        gameObject.transform.Rotate(speed);
+        gameObject.transform.Rotate(speed, 0, 0);
     }
 }
